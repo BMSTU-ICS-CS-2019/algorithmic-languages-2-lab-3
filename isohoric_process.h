@@ -11,13 +11,13 @@ protected:
 public:
     IsohoricProcess(double nu, double v, double deltaP);
 
-    long double getDeltaP() const override;
+    [[nodiscard]] long double getDeltaP() const override;
 
-    long double getDeltaV() const override;
+    [[nodiscard]] long double getDeltaV() const override;
 
-    long double getDeltaT() const override;
+    [[nodiscard]] long double getDeltaT() const override;
 
-    long double getA() const override;
+    [[nodiscard]] long double getA() const override;
 };
 
 
