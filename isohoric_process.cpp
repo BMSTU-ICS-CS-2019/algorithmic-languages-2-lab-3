@@ -17,3 +17,7 @@ long double IsohoricProcess::getDeltaT() const {
 long double IsohoricProcess::getA() const {
     return 0;
 }
+
+std::string IsohoricProcess::toString() const {
+    return "IsohoricProcess{nu = " + std::to_string(nu_) + ", V = " + std::to_string(v_) + ", deltaP = " + std::to_string(deltaP_) + ", deltaT = " + std::to_string(getDeltaT()) + '}';
+}

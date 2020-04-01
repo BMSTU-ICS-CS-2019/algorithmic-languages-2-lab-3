@@ -18,6 +18,8 @@ public:
     [[nodiscard]] long double getDeltaT() const override;
 
     [[nodiscard]] long double getA() const override;
+
+    [[nodiscard]] std::string toString() const override;
 };
 
 

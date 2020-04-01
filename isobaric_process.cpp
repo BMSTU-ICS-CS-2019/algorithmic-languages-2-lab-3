@@ -17,3 +17,7 @@ long double IsobaricProcess::getDeltaT() const {
 long double IsobaricProcess::getA() const {
     return p_ * deltaV_;
 }
+
+std::string IsobaricProcess::toString() const {
+    return "IsobaricProcess{nu = " + std::to_string(nu_) + ", P = " + std::to_string(p_) + ", deltaV = " + std::to_string(deltaV_) + ", deltaT = " + std::to_string(getDeltaT()) + '}';
+}

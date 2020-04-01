@@ -1,6 +1,7 @@
 #ifndef ALGORITHMIC_LANGUAGES_2_LAB_3_THERMODYNAMIC_PROCESS_H
 #define ALGORITHMIC_LANGUAGES_2_LAB_3_THERMODYNAMIC_PROCESS_H
 
+#include <string>
 
 /*
  * PV = 𝜈RT
@@ -21,6 +22,8 @@ public:
     [[nodiscard]] virtual long double getDeltaT() const = 0;
 
     [[nodiscard]] virtual long double getA() const = 0;
+
+    [[nodiscard]] virtual std::string toString() const = 0;
 };
 
 

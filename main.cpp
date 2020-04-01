@@ -57,10 +57,9 @@ int main() {
 
     long double totalA = 0;
     {
-        size_t i = 0;
         for (auto const& process : processes) {
             auto const processA = process->getA();
-            std::cout << "A[" << ++i << "] = " << processA << std::endl;
+            std::cout << "A[" << process->toString() << "] = " << processA << std::endl;
             totalA += processA;
         }
     }
