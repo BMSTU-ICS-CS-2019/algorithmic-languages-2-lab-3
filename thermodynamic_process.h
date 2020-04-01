@@ -7,20 +7,20 @@
  */
 class ThermodynamicProcess {
 protected:
-    double nu_;
+    long double nu_;
 public:
 
     static constexpr long double R = 8.31446261815324;
 
-    explicit ThermodynamicProcess(double nu);
+    explicit ThermodynamicProcess(long double nu);
 
-    [[nodiscard]] virtual double getDeltaP() const = 0;
+    [[nodiscard]] virtual long double getDeltaP() const = 0;
 
-    [[nodiscard]] virtual double getDeltaV() const = 0;
+    [[nodiscard]] virtual long double getDeltaV() const = 0;
 
-    [[nodiscard]] virtual double getDeltaT() const = 0;
+    [[nodiscard]] virtual long double getDeltaT() const = 0;
 
-    [[nodiscard]] virtual double getA() const = 0;
+    [[nodiscard]] virtual long double getA() const = 0;
 };
 
 
